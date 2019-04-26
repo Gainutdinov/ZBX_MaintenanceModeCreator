@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'cred_shell_ui.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(394, 218)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("file.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Dialog.setWindowIcon(icon)
+        self.formLayout_2 = QtWidgets.QFormLayout(Dialog)
+        self.formLayout_2.setObjectName("formLayout_2")
+        self.formLayout = QtWidgets.QFormLayout()
+        self.formLayout.setObjectName("formLayout")
+        self.formLayout_2.setLayout(0, QtWidgets.QFormLayout.LabelRole, self.formLayout)
+        self.lineEdit = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit.setObjectName("lineEdit")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
+        self.label = QtWidgets.QLabel(Dialog)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label)
+        self.lineEdit_2 = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit_2.setText("")
+        self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.formLayout_2.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.lineEdit_2)
+        self.label_2 = QtWidgets.QLabel(Dialog)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.formLayout_2.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.lineEdit_3 = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.formLayout_2.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.lineEdit_3)
+        self.label_3 = QtWidgets.QLabel(Dialog)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.formLayout_2.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_3)
+        self.buttonBox = QtWidgets.QDialogButtonBox(Dialog)
+        self.buttonBox.setEnabled(False)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.SaveAll)
+        self.buttonBox.setCenterButtons(True)
+        self.buttonBox.setObjectName("buttonBox")
+        self.formLayout_2.setWidget(7, QtWidgets.QFormLayout.SpanningRole, self.buttonBox)
+        self.label_4 = QtWidgets.QLabel(Dialog)
+        font = QtGui.QFont()
+        font.setFamily("Meiryo UI")
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setUnderline(True)
+        font.setWeight(75)
+        self.label_4.setFont(font)
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.SpanningRole, self.label_4)
+
+        self.retranslateUi(Dialog)
+        self.buttonBox.accepted.connect(Dialog.accept)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Credentials for zabbix"))
+        self.lineEdit.setPlaceholderText(_translate("Dialog", "username"))
+        self.label.setText(_translate("Dialog", "username for zabbix*"))
+        self.lineEdit_2.setPlaceholderText(_translate("Dialog", "Pass1234"))
+        self.label_2.setText(_translate("Dialog", "password for zabbix*"))
+        self.lineEdit_3.setPlaceholderText(_translate("Dialog", "https://s137m018.ru137.corpintra.net"))
+        self.label_3.setText(_translate("Dialog", "zabbix url*"))
+        self.label_4.setText(_translate("Dialog", "Please fill all empty fields!"))
+
