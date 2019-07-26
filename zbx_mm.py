@@ -57,6 +57,19 @@ class MyWin(QMainWindow, Ui_MainWindow):
         self.ui.startDateTime_dte.setDateTime(now)
         self.ui.finishDateTime_dte.setDateTime(tomorrow)
         self.startMonitoring()
+        self.ui.filter_le.textChanged.connect(self.filterHosts)
+    
+
+    def filterHosts(self):
+        filterText = self.ui.filter_le.text()
+        if filterText:
+            for ite in range(self.ui.listWidget.count()):
+                if filterText not in self.ui.listWidget.item(ite).text():
+                    self.ui.listWidget.item(ite).setHidden(True)
+        else:
+            for ite in range(self.ui.listWidget.count()):
+                self.ui.listWidget.item(ite).setHidden(False)
+
 
 
     def startMonitoring(self):

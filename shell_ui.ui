@@ -19,76 +19,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="6" column="1">
-     <widget class="QRadioButton" name="radioButton_2">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>With data collection</string>
-      </property>
-      <property name="checked">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0" rowspan="2">
-     <widget class="QLabel" name="label_4">
-      <property name="font">
-       <font>
-        <family>Gisha</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Maintenance type*</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="0" colspan="2">
-     <widget class="QLabel" name="label_5">
-      <property name="font">
-       <font>
-        <family>Gisha</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Description of your maintenance mode</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0" colspan="2">
-     <widget class="QLabel" name="label_6">
-      <property name="font">
-       <font>
-        <family>Gisha</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Name of your maintenance mode</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
+    <item row="4" column="1">
      <widget class="QListWidget" name="listWidget_2">
       <property name="dragDropMode">
        <enum>QAbstractItemView::DragDrop</enum>
@@ -129,33 +60,54 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="label">
+    <item row="7" column="0" rowspan="2">
+     <widget class="QLabel" name="label_4">
       <property name="font">
        <font>
+        <family>Gisha</family>
         <pointsize>12</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Finish maintenance at*</string>
+       <string>Maintenance type*</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>
-    <item row="10" column="0" colspan="2">
-     <widget class="QLabel" name="label_3">
+    <item row="9" column="0" colspan="2">
+     <widget class="QLabel" name="label_5">
       <property name="font">
        <font>
-        <family>Segoe UI</family>
-        <pointsize>14</pointsize>
+        <family>Gisha</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Text log</string>
+       <string>Description of your maintenance mode</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <family>Gisha</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name of your maintenance mode</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -163,31 +115,31 @@
      </widget>
     </item>
     <item row="7" column="1">
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="radioButton_2">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>No data collection</string>
+       <string>With data collection</string>
       </property>
       <property name="checked">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
      </widget>
     </item>
-    <item row="3" column="0">
+    <item row="4" column="0">
      <widget class="QListWidget" name="listWidget">
       <property name="dragDropMode">
        <enum>QAbstractItemView::DragDrop</enum>
       </property>
      </widget>
     </item>
-    <item row="5" column="0" colspan="2">
+    <item row="6" column="0" colspan="2">
      <widget class="QLineEdit" name="name_le"/>
     </item>
-    <item row="9" column="0" colspan="2">
+    <item row="10" column="0" colspan="2">
      <widget class="QLineEdit" name="dscr_le">
       <property name="placeholderText">
        <string>Please feel free to write here your description</string>
@@ -226,7 +178,7 @@
       </property>
      </widget>
     </item>
-    <item row="11" column="0" colspan="2">
+    <item row="12" column="0" colspan="2">
      <widget class="QTextEdit" name="textEdit">
       <property name="enabled">
        <bool>false</bool>
@@ -239,10 +191,65 @@
       </property>
      </widget>
     </item>
-    <item row="12" column="0" colspan="2">
+    <item row="13" column="0" colspan="2">
      <widget class="QPushButton" name="pushButton">
       <property name="text">
        <string>create a new maintenance mode</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Finish maintenance at*</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" colspan="2">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Text log</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QRadioButton" name="radioButton">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>No data collection</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="filter_le">
+      <property name="placeholderText">
+       <string>type here to filter the available hosts</string>
       </property>
      </widget>
     </item>
